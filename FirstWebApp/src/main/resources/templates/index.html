@@ -7,11 +7,25 @@
 <body>
 <h2>Student Portal</h2>
 
-<a href="/student/new">Add a student </a>
+<a href="/students/new">Add a student </a>
+<br>
+<a href="/students/list">Student list </a>
 <br>
 
+<form action="/students/update" method="GET">
+    Update a Student (with ID )<input type="text" NAME="id"/>
+    <input type="Submit" value="Search">
+</form>
 
-<a href="/sdudent/list">Student list</a>
+<br>
+
+<form action="/students/delete" method="post">
+    Delete a Student (with ID )<input type="text" NAME="id"/>
+    <input type="Submit" value="Delete a Student">
+</form>
+
+
+
 
 </body>
 </html>

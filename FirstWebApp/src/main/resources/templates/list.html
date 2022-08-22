@@ -13,19 +13,24 @@
         <th>Name</th>
         <th>Surname</th>
     </tr>
+
     </thead>
 
     <tbody>
     <tr th:each="i : ${students}">
         <td th:text="${i.id}">0</td>
         <td th:text="${i.name}">0</td>
-        <td th:text="" ${i.surname}>0</td>
+        <td th:text="${i.surname}">0</td>
 
     </tr>
     </tbody>
 
+
+
 </table>
 
+<br>
 
+<a href="/students/">go to the Homepage</a>
 </body>
 </html>

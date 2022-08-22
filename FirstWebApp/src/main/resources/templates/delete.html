@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete a Student</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/students/delete}" th:object="${student}" method="post">
+  Student ID:<input type="text" th:field="*{id}"/>
+  <br>
+  Student Name:<input type="text" th:field="*{name}"/>
+  <br>
+  Student Surname:<input type="text" th:field="*{surname}"/>
+  <br>
+  <input type="submit" value="Add A Student">
+</form>
+<br>
+
+<a href="/students/">go to the Homepage</a>
+
+</body>
+</html>
