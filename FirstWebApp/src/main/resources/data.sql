@@ -1,3 +1,14 @@
 INSERT INTO Student111 VALUES (1, 'asad1', 'asadov1')
 INSERT INTO Student111 VALUES (2, 'asad2', 'asadov2')
-INSERT INTO Student111 VALUES (3, 'asad3', 'asadov3')
+INSERT INTO Student111 VALUES (3, 'asad1', 'asadov3')
+
+
+INSERT INTO COURSE VALUES (10,'Riyaziyyat' , 'RIYAZIYYAT BIR DERYADIR' )
+INSERT INTO COURSE VALUES (20,'Kimya' , 'KIMYA BIR DERYADIR' )
+INSERT INTO COURSE VALUES (30,'Fizika' , 'Fizika BIR DERYADIR' )
+
+iNSERT INTO Students_Courses VALUES (1,30)
+iNSERT INTO Students_Courses VALUES (1,10)
+iNSERT INTO Students_Courses VALUES (2,30)
+iNSERT INTO Students_Courses VALUES (3,20)
+

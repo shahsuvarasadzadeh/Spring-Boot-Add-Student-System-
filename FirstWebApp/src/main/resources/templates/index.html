@@ -6,10 +6,13 @@
 </head>
 <body>
 <h2>Student Portal</h2>
-
-<a href="/students/new">Add a student </a>
+<button>
+    <a href="/students/new">Add a student </a>
+</button>
 <br>
-<a href="/students/list">Student list </a>
+<button>
+    <a href="/students/list">Student list </a>
+</button>
 <br>
 
 <form action="/students/update" method="GET">
@@ -23,8 +26,16 @@
     Delete a Student (with ID )<input type="text" NAME="id"/>
     <input type="Submit" value="Delete a Student">
 </form>
-
-
+<br>
+<form action="/students/name" method="GET">
+    Find Student with name <input type="text" name="name"/>
+    <input type="Submit" value="Find Student">
+</form>
+<br>
+<form action="/students/surname" method="GET">
+    Find Student with surname <input type="text" name="surname"/>
+    <input type="Submit" value="Find Student">
+</form>
 
 
 </body>

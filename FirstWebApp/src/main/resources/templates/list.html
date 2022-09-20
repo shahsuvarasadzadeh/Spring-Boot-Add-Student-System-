@@ -22,6 +22,13 @@
         <td th:text="${i.name}">0</td>
         <td th:text="${i.surname}">0</td>
 
+        <td >
+            <select>
+                <option th:each="course : ${i.courses}" th:text="${course.name}" th:value="${course.id}">
+                </option>
+            </select>
+        </td>
+
     </tr>
     </tbody>
 

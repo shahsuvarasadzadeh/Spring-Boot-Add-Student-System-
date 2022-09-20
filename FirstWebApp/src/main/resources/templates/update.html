@@ -13,6 +13,16 @@
     <br>
     Student Surname:<input type="text" th:field="*{surname}"/>
     <br>
+    <ul>
+        <li
+                th:each="course : ${allCourses}">
+            <input type="checkbox" name="courses" th:checked="${student.courses.contains(course)}"
+                   th:value="${course.id}">
+            <label th:text="${course.name}" ></label>
+        </li>
+    </ul>
+
+
     <input type="submit" value="Update A Student">
 </form>
 
